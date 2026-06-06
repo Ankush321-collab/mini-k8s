@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1780232213670,
+      "tag": "0000_silly_talon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780235774978,
+      "tag": "0001_cooing_katie_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1780745249587,
+      "tag": "0002_friendly_earthquake",
+      "breakpoints": true
+    }
+  ]
+}

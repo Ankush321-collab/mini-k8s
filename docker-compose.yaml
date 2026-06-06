@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: ankush
+      POSTGRES_PASSWORD: ankush
+      POSTGRES_DB: mini_k8s
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+
+  valkey:
+    image: valkey/valkey:latest
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - valkey_data:/data  
+
+volumes:
+  postgres_data:
+  valkey_data:
